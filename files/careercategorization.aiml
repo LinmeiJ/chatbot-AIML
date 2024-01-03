@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>DATA AND ANALYSIS</pattern>
+	    <template>
+	        <ol>
+	            <li>Business Analyst</li>
+	            <li>Data Scientist</li>
+	            <li>Research and Development Scientist</li>
+            </ol>
+	    </template>
+    </category>
+    	<category>
+	    <pattern>ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING</pattern>
+	    <template>
+	        <ol>
+	            <li>Artificial Intelligence and Machine Learning Engineer</li>
+            </ol>
+	    </template>
+    </category>
+    	<category>
+	    <pattern>SECURITY AND ADMINISTRATION</pattern>
+	    <template>
+	        <ol>
+	            <li>Database Administrator</li>
+	            <li>Information Security Analyst</li>
+	            <li>Chief Information Security Officer</li>
+            </ol>
+	    </template>
+    </category>
+    	<category>
+	    <pattern>DEVELOPMENT AND ENGINEERING</pattern>
+	    <template>
+	        <ol>
+	            <li>Web Developer</li>
+	            <li>Software Engineer/Developer</li>
+	            <li>Mobile Application Designer or Developer</li>
+	            <li>Full Stack Developer</li>
+	            <li>Systems Analyst</li>
+	            <li>Software Tester/Software Quality Assurance</li>
+	            <li>Software Quality Assurance Manager</li>
+	            <li>Cloud Computing Engineer</li>
+            </ol>
+	    </template>
+    </category>
+    <category>
+        <pattern>Network and Systems</pattern>
+	    <template>
+	        <ol>
+	            <li>Network Architect</li>
+	            <li>Systems Analyst</li>
+            </ol>
+	    </template>
+    </category>
+    <category>
+        <pattern>PRODUCT AND PROJECT MANAGEMENT</pattern>
+	    <template>
+	        <ol>
+	            <li>Product Manager</li>
+	            <li>Engineering Manager</li>
+            </ol>
+	    </template>
+    </category>
+    <category>
+        <pattern>Academia and Research</pattern>
+	    <template>
+	        <ol>
+	            <li>Computer Scientist or Computer Science Researcher</li>
+	            <li>Computer Scientist Professor</li>
+            </ol>
+	    </template>
+    </category>
+        <category>
+        <pattern>Design and User Experience</pattern>
+	    <template>
+	        <ol>
+	            <li>User Interface Designer</li>
+            </ol>
+	    </template>
+    </category>
+</aiml>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>I am looking for *</pattern>
+        <template>Are you looking for what career path you could pursue after graduating?</template>
+    </category>
+    <category>
+        <pattern>NO</pattern>
+        <template>Sorry, this is a career advice chatbot for CS students.You may have to consult different chatbot for what you are looking for. </template>
+    </category>
+    <!--yes confirmation category-->
+    <category>
+        <pattern>YES</pattern>
+        <that>Are you looking for what career path you could pursue after graduating?</that>
+        <template>Sure! Students who graduates from Computer Science might copnsider the following career path:
+            <ol><!-- https://www.usnews.com/education/best-graduate-schools/articles/what-can-you-do-with-a-computer-science-degree -->
+                <li>Business analyst</li>
+                <li>Artificial intelligence and machine learning engineer</li>
+                <li>Chief information security officer</li>
+                <li>Web developer</li>
+                <li>User interface designer</li>
+                <li>Systems analyst</li>
+                <li>Software tester</li>
+                <li>Software quality assurance manager</li>
+                <li>Software engineer</li>
+                <li>Software developer</li>
+                <li>Network architect</li>
+                <li>Product manager</li>
+                <li>Mobile application designer or developer</li>
+                <li>Information technology specialist</li>
+                <li>Information security analyst</li>
+                <li>Full-stack developer</li>
+                <li>Engineering manager</li>
+                <li>Database administrator</li>
+                <li>Data scientist</li>
+                <li>Computer scientist or computer science researcher</li>
+                <li>Cloud computing engineer</li>
+                <li>Computer science professor</li>
+                <li>Research and development scientist</li>
+            </ol>
+        </template>
+    </category>
+    
+    <category>
+    <pattern>YES *</pattern>
+    <template><srai>YES</srai><sr/></template>
+    </category>
+    
+    <!--General wild card to catch any fallback-->
+    <category>
+	    <pattern>*</pattern>
+	    <template>Hi there! Congratulations on nearing of your completion of CS Degree. I am a career advisor chatbot. How can I help you?</template>
+    </category>
+</aiml>
