@@ -13,12 +13,6 @@
         </template>
     </category>
     
-    <!--yes with a wild card-->
-    <!--<category>-->
-    <!--<pattern>YES *</pattern>-->
-    <!--<template><srai>YES</srai><sr/></template>-->
-    <!--</category>-->
-    <!--yes confirmation category-->
     <category>
         <pattern>NO</pattern>
         <template>Sorry, this is a career advice chatbot for CS students.You may have to consult a different chatbot for what you are looking for. </template>
@@ -41,10 +35,9 @@
         </template>
     </category>
     
-    
     <!--General wild card to catch any fallback-->
     <category>
-	    <pattern>*</pattern>
+	    <pattern>Hi *</pattern>
 	    <template>Hi there! Congratulations on nearing of your completion of CS Degree. I am a career advisor chatbot. How can I help you?</template>
     </category>
 </aiml>
