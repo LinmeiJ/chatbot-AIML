@@ -4,4 +4,32 @@
     <pattern>*</pattern>
     <template>Sorry, I have no answer for that.</template>
   </category>
+   <category>
+      <pattern> WHO IS ALBERT EINSTEIN </pattern>
+      <template>Albert Einstein was a German physicist.</template>
+   </category>
+ 
+   <category>
+      <pattern> WHO IS Isaac NEWTON </pattern>
+      <template>Isaac Newton was a English physicist and mathematician.</template>
+   </category>
+   
+   <category>
+      <pattern>DO YOU KNOW WHO * IS</pattern>
+      <template>
+         <srai>WHO IS <star/></srai>
+      </template>
+   </category>
+   
+   <category>
+      <pattern>BYE</pattern>
+      <template>Good Bye!</template>
+   </category>
+   
+   <category>
+      <pattern>BYE *</pattern>
+      <template>
+         <srai>BYE</srai>
+      </template>
+   </category>
 </aiml>

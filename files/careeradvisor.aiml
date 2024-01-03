@@ -2,25 +2,24 @@
 <aiml version="2.0">
     <category>
         <pattern>I am looking for *</pattern>
-        <template>Are you looking for what career path you could pursue after graduating?</template>
+        <template>Are you looking for what career path you could pursue after graduating? ('yes' or 'no')</template>
     </category>
     
-    <!--yes confirmation category-->
+    <!--yes confirmation-->
     <category>
         <pattern>YES</pattern>
         <template>
             <srai>WHAT IS YOUR AREA OF INTEREST</srai>
         </template>
     </category>
-    
     <category>
         <pattern>NO</pattern>
         <template>Sorry, this is a career advice chatbot for CS students.You may have to consult a different chatbot for what you are looking for. </template>
     </category>
     
     <category>
-        <pattern>WHAT IS YOUR AREA OF INTEREST?</pattern>
-        <template>Sure! Students who graduates from Computer Science usually landed among the following career categories:
+        <pattern>WHAT IS YOUR AREA OF INTEREST</pattern>
+        <template>Sure! There are many different options. What is your primary area of interest? Please reply with the number corresponding to your interest.
             <ol><!-- https://www.usnews.com/education/best-graduate-schools/articles/what-can-you-do-with-a-computer-science-degree -->
                 <li>Data and Analysis</li>
                 <li>Artificial Intelligence and Machine Learning</li>
@@ -31,13 +30,19 @@
                 <li>Academia and Research</li>
                 <li>Design and User Experience</li>
             </ol>
-        As you see, there are many different options. What is your primary area of interest? Please reply with the number corresponding to your interest.
         </template>
     </category>
     
     <!--General wild card to catch any fallback-->
     <category>
-	    <pattern>Hi *</pattern>
+	    <pattern>HI *</pattern>
+	    <template>
+	        <srai>HI</srai>
+	    </template>
+    </category>
+    
+      <category>
+	    <pattern>HI</pattern>
 	    <template>Hi there! Congratulations on nearing of your completion of CS Degree. I am a career advisor chatbot. How can I help you?</template>
     </category>
 </aiml>
