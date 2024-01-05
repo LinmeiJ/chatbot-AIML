@@ -199,6 +199,7 @@
         <pattern>HMM</pattern>
         <template>
             Oops! It looks like I've a bit of brain freeze. For a wisdom recharge and more tailored advice, why not schedule a in person visit with a human career advidor? They are pretty awesome! Just dial 111-111-111 to book a time.
+            <srai>END NOTE</srai>
         </template>
     </category>
     
@@ -222,7 +223,7 @@
     <category>
         <pattern>DEVELOPMENT AND ENGINEERING</pattern>
         <template>
-            Based on your interest, The following job titles in the market are all relevent to development and engineering and can be your career starter.
+            Based on your interest, The following job titles in the market are all relevent to software development and engineering and can be your career starter.
             <ol>
                 <li>Software Developer</li>
                 <li>Software Engineer</li>
@@ -232,6 +233,7 @@
             </ol>
         While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge in software development and problem-solving. 
         And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
+            <srai>END NOTE</srai>
         </template>
     </category>
 
@@ -248,6 +250,7 @@
             </ol>
         While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in Leadership and Education. 
         And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
+            <srai>END NOTE</srai>
         </template>
     </category>
 
@@ -264,6 +267,7 @@
             </ul>
         While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in Design And User Experience. 
         And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
+            <srai>END NOTE</srai>
         </template>
     </category>
    
@@ -281,6 +285,7 @@
             </ul>
         While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in data science and analytics. 
         And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
+            <srai>END NOTE</srai>
         </template>
     </category>
 
@@ -297,6 +302,54 @@
             </ul>
         While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in security and networks. 
         And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
+            <srai>END NOTE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>END NOTE</pattern>
+        <template>
+            <button>
+            <text>Explore more jobs?</text>
+            <postback>EXPLORE MORE JOBS</postback>
+            </button>
+            <button>
+                <text>Leave a feedback?</text>
+                <postback>LEAVE A FEEDBACK</postback>
+            </button>
+        </template>
+    </category>
+     
+    <category>
+        <pattern>EXPLORE MORE JOBS</pattern>
+        <template>
+          <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>LEAVE A FEEDBACK</pattern>
+        <template>
+            Do you find the career advice helpful?
+            <button>
+                <text>Yes</text>
+                <postback>POSITIVE</postback>
+            </button>
+             <button>
+                <text>No</text>
+                <postback>NEGATIVE</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>POSITIVE</pattern>
+        <template>
+            Great to hear that you found it helpful! Thank you! Have a nice day!
+        </template>
+    </category>
+    <category>
+        <pattern>NEGATIVE</pattern>
+        <template>
+            I am sorry about that. I hope you will have a positive experience next time when you return. Have a nice day!
         </template>
     </category>
 
