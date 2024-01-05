@@ -13,7 +13,16 @@
     </category>
     <category>
         <pattern>I am looking for *</pattern>
-        <template>Are you looking for what career path you could pursue after graduating? ('yes' or 'no')</template>
+        <template>Are you looking for what career path you could pursue after graduating?
+            <reply>
+                <text>Yes</text>
+                <postback>YES</postback>
+            </reply>
+            <reply>
+                <text>No</text>
+                <postback>NO</postback>
+            </reply>
+        </template>
     </category>
     
     <!--Explore user's interests and strengths-->
@@ -30,327 +39,270 @@
             Sure! There are many different options with having a Computer Science degree.
             let's explore your area of strength to narrow down a path for you.
             Do you like programming?
-            <reply>
+            <button>
                 <text>Yes</text>
                 <postback>PROGRAMMING SKILL</postback>
-            </reply>
-            <reply>
+            </button>
+            <button>
                 <text>No</text>
                 <postback>STATISTICAL KNOWLEDGE</postback>
-            </reply>
+            </button>
         </template>
-        </category>
+    </category>
     
     <category>
         <pattern>PROGRAMMING SKILL</pattern>
         <template>
-            Are you attention to details and enjoy visual designing?
-            <reply>
+            Do you double-check your work for errors before submission?
+            <button>
                 <text>Yes</text>
-                <postback>CREATIVITY & VISUAL</postback>
-            </reply>
-            <reply>
+                <postback>DEVELOPMENT AND ENGINEERING</postback>
+            </button>
+            <button>
                 <text>No</text>
                 <postback>RESEARCH SKILLS</postback>
-            </reply>
+            </button>
         </template>
     </category>
     
-    <!--<category>-->
-    <!--    <pattern>STATISTICAL KNOWLEDGE</pattern>-->
-    <!--    <template>-->
-    <!--        Are you curiouse about using data to transform or discover something useful for others to use?-->
-    <!--    <button>-->
-    <!--        <text>Yes</text>-->
-    <!--        <postback>DATA SCIENCE & ANALYTICS</postback>-->
-    <!--    </button>-->
-    <!--    <button>-->
-    <!--        <text>No</text>-->
-    <!--        <postback>RESEARCH SKILLS</postback>-->
-    <!--    </button></template>-->
-    <!--</category>-->
+    <category>
+        <pattern>STATISTICAL KNOWLEDGE</pattern>
+        <template>
+            Are you curiouse about using data to transform or discover something useful for others to use?
+            <button>
+                <text>Yes</text>
+                <postback>DATA SCIENCE AND ANALYTICS</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>RESEARCH SKILLS</postback>
+            </button></template>
+    </category>
     
-    <!--<category>-->
-    <!--    <pattern>ATTENTION TO DETIALS</pattern>-->
-    <!--    <template>-->
-    <!--        Do you double-check your work for errors before submission?-->
-    <!--    <button>-->
-    <!--    <text>Yes</text>-->
-    <!--    <postback>DEVELOPMENT AND ENGINEERING</postback>-->
-    <!--    </button>-->
-    <!--    <button>-->
-    <!--        <text>No</text>-->
-    <!--        <postback>ANALYTICAL SKILLS</postback>-->
-    <!--    </button>-->
-    <!--    </template>-->
-    <!--</category>-->
+     <category>
+        <pattern>ANALYTICAL SKILLS</pattern>
+        <template>
+            Do you enjoy collect and analyze information?
+            <button>
+            <text>Yes</text>
+            <postback>DATA SCIENCE AND ANALYTICS</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>SECURITY AND PROTECTION INTEREST</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CREATIVITY AND VISUAL</pattern>
+        <template>
+            Do you enjoy understanding people's needs and creating visually appealing, functional designs that enhance user satisfication and interation?
+            <button>
+            <text>Yes</text>
+            <postback>DESIGN AND USER EXPERIENCE</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>SECURITY AND PROTECTION INTEREST</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SECURITY AND PROTECTION INTEREST</pattern>
+        <template>
+            Do you desire of strong our internet network security and its practice?
+            <button>
+            <text>Yes</text>
+            <postback>SECURITY AND NETWORKS</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>DESIGN AND USER EXPERIENCE</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DESIGN</pattern>
+        <template>
+            <button>
+            <text>Yes</text>
+            <postback>DESIGN AND USER EXPERIENCE</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>ANALYTICAL SKILLS</postback>
+            </button>
+        </template>
+    </category>
  
-    <!-- <category>-->
-    <!--    <pattern>ANALYTICAL SKILLS</pattern>-->
-    <!--    <template>-->
-    <!--        Do you enjoy collect and analyze information?-->
-    <!--    <button>-->
-    <!--    <text>Yes</text>-->
-    <!--    <postback>DATA SCIENTIST</postback>-->
-    <!--    </button>-->
-    <!--    <button>-->
-    <!--        <text>No</text>-->
-    <!--        <postback>SECURITY AND PROTECTION INTEREST</postback>-->
-    <!--    </button>-->
-    <!--    </template>-->
-    <!--</category>-->
+    <category>
+        <pattern>PROBLEM SOLVING</pattern>
+        <template>
+            When it comes to difficult software problems, do you enjoy the process of sovling them?
+            <button>
+            <text>Yes</text>
+            <postback>TECHNICAL KNOWLEDGE</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>SECURITY AND PROTECTION INTEREST</postback>
+            </button>
+        </template>
+    </category>
     
-    <!--<category>-->
-    <!--    <pattern>CREATIVITY & VISUAL</pattern>-->
-    <!--    <template>-->
-    <!--        Do you enjoy understanding people's needs and creating visually appealing, functional designs that enhance user satisfication and interation?-->
-    <!--    <button>-->
-    <!--    <text>Yes</text>-->
-    <!--    <postback>DESIGN & USER EXPERIENCE</postback>-->
-    <!--    </button>-->
-    <!--    <button>-->
-    <!--        <text>No</text>-->
-    <!--        <postback>SECURITY AND PROTECTION INTEREST</postback>-->
-    <!--    </button>-->
-    <!--    </template>-->
-    <!--</category>-->
+    <category>
+        <pattern>TECHNICAL KNOWLEDGE</pattern>
+        <template>
+            Have you completed any projects using machine learning algorithms?
+            <button>
+            <text>Yes</text>
+            <postback>DEVELOPMENT AND ENGINEERING</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>SECURITY AND PROTECTION INTEREST</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>RESEARCH SKILLS</pattern>
+        <template>
+            When it comes to something new or new challeges, do you enjoy spending time reading or searching for answers, then help others to understand it as well? 
+            <button>
+            <text>Yes</text>
+            <postback>ANALYTICAL SKILLS</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>BUSINESS ACUMENT</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>BUSINESS ACUMENT</pattern>
+        <template>
+            Are you interest in leading people to reach their goal and assist and help organization focus on customer value and growth? 
+            <button>
+                <text>Yes</text>
+                <postback>LEADERSHIP AND EDUCATION</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>HMM</postback>
+            </button>
+        </template>
+    </category>
+    <category>
+        <pattern>HMM</pattern>
+        <template>
+            Oops! It looks like I've a bit of brain freeze. For a wisdom recharge and more tailored advice, why not schedule a in person visit with a human career advidor? They are pretty awesome! Just dial 111-111-111 to book a time.
+        </template>
+    </category>
     
-    <!--<category>-->
-    <!--    <pattern>SECURITY AND PROTECTION INTEREST</pattern>-->
-    <!--    <template>-->
-    <!--        Do you desire of strong our internet network security and its practice?-->
-    <!--        <button>-->
-    <!--        <text>Yes</text>-->
-    <!--        <postback>NETWORK AND SECURITY ENGINEERING</postback>-->
-    <!--        </button>-->
-    <!--        <button>-->
-    <!--            <text>No</text>-->
-    <!--            <postback>DESIGN AND USER EXPERIENCE</postback>-->
-    <!--        </button>-->
-    <!--    </template>-->
-    <!--</category>-->
+    <category>
+        <pattern>RESEARCH EDUCATION</pattern>
+        <template>
+            Do you enjoy teaching and leading others?
+            <button>
+            <text>Yes</text>
+            <postback>LEADERSHIP AND EDUCATION</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>TECHNICAL KNOWLEDGE</postback>
+            </button>
+        </template>
+    </category>
     
-    <!--<category>-->
-    <!--    <pattern>DESIGN</pattern>-->
-    <!--    <template>-->
-    <!--        <button>-->
-    <!--        <text>Yes</text>-->
-    <!--        <postback>DESIGN AND USER EXPERIENCE</postback>-->
-    <!--        </button>-->
-    <!--        <button>-->
-    <!--            <text>No</text>-->
-    <!--            <postback>ANALYTICAL SKILLS</postback>-->
-    <!--        </button>-->
-    <!--    </template>-->
-    <!--</category>-->
+    <!--Recommanded Jobs-->
  
-    <!--<category>-->
-    <!--    <pattern>PROBLEM SOLVING</pattern>-->
-    <!--    <template>-->
-    <!--        When it comes to difficult software problems, do you enjoy the process of sovling them?-->
-    <!--        <button>-->
-    <!--        <text>Yes</text>-->
-    <!--        <postback>TECHNICAL KNOWLEDGE</postback>-->
-    <!--        </button>-->
-    <!--        <button>-->
-    <!--            <text>No</text>-->
-    <!--            <postback>SECURITY AND PROTECTION INTEREST</postback>-->
-    <!--        </button>-->
-    <!--    </template>-->
-    <!--</category>-->
-    
-    <!--<category>-->
-    <!--    <pattern>TECHNICAL KNOWLEDGE</pattern>-->
-    <!--    <template>-->
-    <!--        Have you completed any projects using machine learning algorithms?-->
-    <!--        <button>-->
-    <!--        <text>Yes</text>-->
-    <!--        <postback>DEVELOPMENT AND ENGINEERING</postback>-->
-    <!--        </button>-->
-    <!--        <button>-->
-    <!--            <text>No</text>-->
-    <!--            <postback>SECURITY AND PROTECTION INTEREST</postback>-->
-    <!--        </button>-->
-    <!--    </template>-->
-    <!--</category>-->
-    <!--<category>-->
-    <!--    <pattern>RESEARCH SKILLS</pattern>-->
-    <!--    <template>-->
-    <!--        When it comes to something new or new challeges, do you enjoy spending time reading or searching for answers, then help others to understand it as well? -->
-    <!--        <button>-->
-    <!--        <text>Yes</text>-->
-    <!--        <postback>TEACHING SKILLS</postback>-->
-    <!--        </button>-->
-    <!--        <button>-->
-    <!--            <text>No</text>-->
-    <!--            <postback>BUSINESS ACUMENT</postback>-->
-    <!--        </button>-->
-    <!--    </template>-->
-    <!--</category>-->
-    <!--<category>-->
-    <!--    <pattern>BUSINESS ACUMENT</pattern>-->
-    <!--    <template>-->
-    <!--        Are you interest in leading people to reach their goal and assist and help organization focus on customer value and growth? -->
-    <!--        <button>-->
-    <!--        <text>Yes</text>-->
-    <!--        <postback>LEADERSHIP AND EDUCATION</postback>-->
-    <!--        </button>-->
-    <!--        <button>-->
-    <!--            <text>No</text>-->
-    <!--            <postback>ESEARCH SKILLS-EDUCATIONA</postback>-->
-    <!--        </button>-->
-    <!--    </template>-->
-    <!--</category>-->
-    
-    <!--<category>-->
-    <!--    <pattern>RESEARCH SKILLS-EDUCATIONAL</pattern>-->
-    <!--    <template>-->
-    <!--        Do you enjoy teaching and leading others?-->
-    <!--        <button>-->
-    <!--        <text>Yes</text>-->
-    <!--        <postback>LEADERSHIP AND EDUCATION</postback>-->
-    <!--        </button>-->
-    <!--        <button>-->
-    <!--            <text>No</text>-->
-    <!--            <postback>TECHNICAL KNOWLEDGE</postback>-->
-    <!--        </button>-->
-    <!--    </template>-->
-    <!--</category>-->
-    
-    
-    <!-- Five job types -->
-    <!--<category>-->
-    <!--    <pattern>DEVELOPMENT AND ENGINEERING</pattern>-->
-    <!--    <template>-->
-    <!--        <think><set name='topic'>Development and Engineering</set></think>-->
-    <!--    </template>-->
-    <!--</category>-->
-    <!--<category>-->
-    <!--    <pattern>LEADERSHIP AND EDUCATION</pattern>-->
-    <!--    <template>-->
-    <!--         <think><set name='topic'>Leadership and Education</set></think>-->
-    <!--    </template>-->
-    <!--</category>-->
-    <!--<category>-->
-    <!--    <pattern>DATA SCIENCE & ANALYTICS</pattern>-->
-    <!--    <template>-->
-    <!--        <think><set name='topic'>Data Science & Analytics</set></think>-->
-    <!--    </template>-->
-    <!--</category>-->
-    <!--<category>-->
-    <!--    <pattern>DESIGN & USER EXPERIENCE</pattern>-->
-    <!--    <template>-->
-    <!--        <think><set name='topic'>Design & User Experience</set></think>-->
-    <!--    </template>-->
-    <!--</category>-->
-    <!--<category>-->
-    <!--    <pattern>SECURITY & NETWORKS</pattern>-->
-    <!--    <template>-->
-    <!--        <think><set name='topic'>Security & Networks</set></think>-->
-    <!--    </template>-->
-    <!--</category>-->
-    
-    <!--<topic name="Development and Engineering">-->
-    <!--    <category>-->
-    <!--        <pattern>POTENTIAL JOB TO SEARCH FOR</pattern>-->
-    <!--        <template>-->
-    <!--            The following job titles in the market are all relevent to development and engineering. You can search for anyone of them as your career starter.-->
-    <!--            <ol>-->
-    <!--                <li>Software Developer</li>-->
-    <!--                <li>Software Engineer</li>-->
-    <!--                <li>Full-stack Developer</li>-->
-    <!--                <li>Mobile Application Designer or Developer</li>-->
-    <!--                <li>Web Developer</li>-->
-    <!--            </ol>-->
-    <!--        While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge in software development and problem-solving. -->
-    <!--        And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.-->
-    <!--        </template>-->
-    <!--    </category>-->
-    <!--</topic>-->
-    
-    <!--<topic name="Leadership and Education">-->
-    <!--    <category>-->
-    <!--        <pattern>POTENTIAL JOB TO SEARCH FOR</pattern>-->
-    <!--        <template>-->
-    <!--            The following job titles in the market are all relevent to development and engineering. You can search for anyone of them as your career starter.-->
-    <!--            <ol>-->
-    <!--                <li>Information Technology Specialist</li>-->
-    <!--                <li>Engineering Lead</li>-->
-    <!--                <li>Computer Science Professor</li>-->
-    <!--                <li>Computer Scientist</li>-->
-    <!--                <li>Computer Scientist Researcher</li>-->
-    <!--            </ol>-->
-    <!--        While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in Leadership and Education. -->
-    <!--        And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.-->
-    <!--        </template>-->
-    <!--    </category>-->
-    <!--</topic>-->
-    
-    
-     <!--No confirmation-->
-    <!--<category>-->
-    <!--    <pattern>NO</pattern>-->
-    <!--    <template>Sorry, this is a career advice chatbot for CS students.You may have to consult a different chatbot for what you are looking for. </template>-->
-    <!--</category>-->
- 
-<!--OLD-->
+    <category>
+        <pattern>DEVELOPMENT AND ENGINEERING</pattern>
+        <template>
+            Based on your interest, The following job titles in the market are all relevent to development and engineering and can be your career starter.
+            <ol>
+                <li>Software Developer</li>
+                <li>Software Engineer</li>
+                <li>Full-stack Developer</li>
+                <li>Mobile Application Designer or Developer</li>
+                <li>Web Developer</li>
+            </ol>
+        While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge in software development and problem-solving. 
+        And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
+        </template>
+    </category>
 
-    <!--<category>-->
-    <!--    <pattern>CHECK CATEGORY SELECTION</pattern>-->
-    <!--    <template>-->
-    <!--        <condition name="userChoise" value="1">-->
-                <!--<ol>-->
-                <!--    <li>Software Developer</li>-->
-                <!--    <li>Software Engineer</li>-->
-                <!--    <li>Full-stack Developer</li>-->
-                <!--    <li>Mobile Application Designer or Developer</li>-->
-                <!--    <li>Web Developer</li>-->
-                <!--</ol>-->
-    <!--            <think> <set name="topic">Development and Engineering</set></think>-->
-    <!--            Great! <srai>YOU'VE SELECTED Development and Engineering</srai>-->
-    <!--        </condition>-->
-    <!--        <condition name="userChoise" value="2">-->
-    <!--            You selected Data Science and Analytics-->
-                <!--<ol>-->
-                <!--    <li>Data Scientist</li>-->
-                <!--    <li>Business Analyst</li>-->
-                <!--    <li>Artificial Intelligence and Machine Learning Engineer</li>-->
-                <!--    <li>Database Administrator</li>-->
-                <!--    <li>Software Quality Assurance Manager</li>-->
-                <!--</ol>-->
-    <!--        </condition>-->
-    <!--        <condition name="userChoise" value="3">-->
-    <!--             You selected Data Science and Analytics-->
-                <!--<ol>-->
-                <!--    <li>Network Architect</li>-->
-                <!--    <li>Chief Information Security Officer</li>-->
-                <!--    <li>Chief Information Security Officer</li>-->
-                <!--    <li>Cloud Computing Engineer</li>-->
-                <!--    <li>Systems Analyst</li>-->
-                <!--</ol>-->
-    <!--        </condition>-->
-    <!--        <condition name="userChoise" value="4">-->
-                <!--You selected Data Science and Analytics-->
-                <!--<ol>-->
-                <!--    <li>Systems Analyst</li>-->
-                <!--    <li>UX Designer</li>-->
-                <!--    <li>Product Manager</li>-->
-                <!--    <li>Software Tester</li>-->
-                <!--    <li>Research and Development Scientist</li>-->
-                <!--</ol>-->
-    <!--        </condition>-->
-    <!--        <condition name="userChoise" value="5">-->
-                <!--You selected Data Science and Analytics-->
-                <!--<ol>-->
-                <!--    <li>Engineering Manager</li>-->
-                <!--    <li>Information Technology Specialist</li>-->
-                <!--    <li>Computer Science Professor</li>-->
-                <!--    <li>Computer Science Professor</li>-->
-                <!--    <li>Web UX Designer</li>-->
-                <!--</ol>-->
-    <!--        </condition>-->
-    <!--    </template>-->
-    <!--</category>-->
-    
-    
+    <category>
+        <pattern>LEADERSHIP AND EDUCATION</pattern>
+        <template>
+            The following job titles in the market are all relevent to development and engineering and can be your career starter.
+            <ol>
+                <li>Information Technology Specialist</li>
+                <li>Engineering Lead</li>
+                <li>Computer Science Professor</li>
+                <li>Computer Scientist</li>
+                <li>Computer Scientist Researcher</li>
+            </ol>
+        While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in Leadership and Education. 
+        And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
+        </template>
+    </category>
+
+    <category>
+        <pattern>DESIGN AND USER EXPERIENCE</pattern>
+        <template>
+             The following job titles in the market are related to Design And User Experience and can be your career starter.
+            <ul>           
+                <li>UX Designer</li>
+                <li>User Interface Designer</li>
+                <li>Software Design</li>
+                <li>Front-End Software Engineering</li>
+                <li>Interaction Designer</li>
+            </ul>
+        While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in Design And User Experience. 
+        And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
+        </template>
+    </category>
+   
+    <category>
+        <pattern>DATA SCIENCE AND ANALYTICS</pattern>
+        <template>
+            The following job titles in the market are related to data science and analytics and can be your career starter.
+            <ul>
+                <li>Data Scientist</li>
+                <li>Business Analyst</li>
+                <li>Research Scientist(Data Science)</li>
+                <li>Database Administrator</li>
+                <li>Software Quality Assurance</li>
+                <li>Machine Learning Engineer</li>
+            </ul>
+        While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in data science and analytics. 
+        And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
+        </template>
+    </category>
+
+    <category>
+        <pattern>SECURITY AND NETWORKS</pattern>
+        <template>
+            The following job titles in the market are related to security and networks and can be your career starter.
+            <ul>
+                <li>Network Security Engineering</li>
+                <li>Cybersecurity Specialist</li>
+                <li>Ethical Hacker or Penetration Tester</li>
+                <li>Incident Responder</li>
+                <li>Information Security Analyst</li>
+            </ul>
+        While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in security and networks. 
+        And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
+        </template>
+    </category>
+
+     <!--No confirmation-->
+    <category>
+        <pattern>NO</pattern>
+        <template>Sorry, this is a career advice chatbot for CS students.This information on this bot may not have what you are looking for. </template>
+    </category>
 </aiml>
