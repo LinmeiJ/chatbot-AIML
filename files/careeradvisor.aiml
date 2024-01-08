@@ -338,14 +338,13 @@
                 <text>Goodbye</text>
                 <postback>GOODBYE</postback>
             </button>
-            
         </template>
     </category>
     
     <category>
         <pattern>GOODBYE</pattern>
         <template>
-            Thank you for your valiable feedback. I've noted down you feedback:"<get name="feedback"/>". Have a great day!
+            Thank you for your valuable feedback. I've noted down you feedback:"<get name="feedback"/>". Have a great day!
         </template>
     </category>
      <!--No confirmation-->
