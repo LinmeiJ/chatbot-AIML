@@ -13,7 +13,7 @@
     </category>
     <category>
         <pattern>I am looking for *</pattern>
-        <template>Are you looking for what career path you could pursue after graduating?
+        <template>Just for conformation, are you looking for what career path you could pursue after graduating?
             <reply>
                 <text>Yes</text>
                 <postback>YES</postback>
@@ -53,14 +53,14 @@
     <category>
         <pattern>PROGRAMMING SKILL</pattern>
         <template>
-            Do you double-check your work for errors before submission?
+            Do you find satisfaction in solving complex problems and seeing a project through to completion?
             <button>
                 <text>Yes</text>
                 <postback>DEVELOPMENT AND ENGINEERING</postback>
             </button>
             <button>
                 <text>No</text>
-                <postback>RESEARCH SKILLS</postback>
+                <postback>SECURITY AND PROTECTION INTEREST</postback>
             </button>
         </template>
     </category>
@@ -71,11 +71,11 @@
             Are you curiouse about using data to transform or discover something useful for others to use?
             <button>
                 <text>Yes</text>
-                <postback>DATA SCIENCE AND ANALYTICS</postback>
+                <postback>ANALYTICAL SKILLS</postback>
             </button>
             <button>
                 <text>No</text>
-                <postback>RESEARCH SKILLS</postback>
+                <postback>BUSINESS ACUMENT</postback>
             </button></template>
     </category>
     
@@ -119,7 +119,7 @@
             </button>
             <button>
                 <text>No</text>
-                <postback>DESIGN AND USER EXPERIENCE</postback>
+                <postback>DESIGN</postback>
             </button>
         </template>
     </category>
@@ -127,6 +127,7 @@
     <category>
         <pattern>DESIGN</pattern>
         <template>
+            Do you often find yourself analyzing and critiquing websites or applications for their ease of use and aesthetic appeal?
             <button>
             <text>Yes</text>
             <postback>DESIGN AND USER EXPERIENCE</postback>
@@ -134,21 +135,6 @@
             <button>
                 <text>No</text>
                 <postback>ANALYTICAL SKILLS</postback>
-            </button>
-        </template>
-    </category>
- 
-    <category>
-        <pattern>PROBLEM SOLVING</pattern>
-        <template>
-            When it comes to difficult software problems, do you enjoy the process of sovling them?
-            <button>
-            <text>Yes</text>
-            <postback>TECHNICAL KNOWLEDGE</postback>
-            </button>
-            <button>
-                <text>No</text>
-                <postback>SECURITY AND PROTECTION INTEREST</postback>
             </button>
         </template>
     </category>
@@ -164,20 +150,6 @@
             <button>
                 <text>No</text>
                 <postback>SECURITY AND PROTECTION INTEREST</postback>
-            </button>
-        </template>
-    </category>
-    <category>
-        <pattern>RESEARCH SKILLS</pattern>
-        <template>
-            When it comes to something new or new challeges, do you enjoy spending time reading or searching for answers, then help others to understand it as well? 
-            <button>
-            <text>Yes</text>
-            <postback>ANALYTICAL SKILLS</postback>
-            </button>
-            <button>
-                <text>No</text>
-                <postback>BUSINESS ACUMENT</postback>
             </button>
         </template>
     </category>
@@ -231,7 +203,7 @@
                 <li>Mobile Application Designer or Developer</li>
                 <li>Web Developer</li>
             </ol>
-        While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge in software development and problem-solving. 
+        Keep in mind: while each still has its unique set of responsibilities and required skills, they all share a foundational knowledge in software development and problem-solving. 
         And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
             <srai>END NOTE</srai>
         </template>
@@ -248,7 +220,7 @@
                 <li>Computer Scientist</li>
                 <li>Computer Scientist Researcher</li>
             </ol>
-        While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in Leadership and Education. 
+        Keep in mind: while each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in Leadership and Education. 
         And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
             <srai>END NOTE</srai>
         </template>
@@ -265,7 +237,7 @@
                 <li>Front-End Software Engineering</li>
                 <li>Interaction Designer</li>
             </ul>
-        While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in Design And User Experience. 
+        Keep in mind: while each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in Design And User Experience. 
         And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
             <srai>END NOTE</srai>
         </template>
@@ -283,7 +255,7 @@
                 <li>Software Quality Assurance</li>
                 <li>Machine Learning Engineer</li>
             </ul>
-        While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in data science and analytics. 
+        Keep in mind: while each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in data science and analytics. 
         And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
             <srai>END NOTE</srai>
         </template>
@@ -300,7 +272,7 @@
                 <li>Incident Responder</li>
                 <li>Information Security Analyst</li>
             </ul>
-        While each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in security and networks. 
+       Keep in mind: while each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in security and networks. 
         And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
             <srai>END NOTE</srai>
         </template>
@@ -349,7 +321,7 @@
     <category>
         <pattern>NEGATIVE</pattern>
         <template>
-            I am sorry about that. I hope you will have a positive experience next time when you return. Have a nice day!
+            I am sorry about that. I hope you will have a positive experience next time when you return as we are still working on adding more features. Have a nice day!
         </template>
     </category>
 
