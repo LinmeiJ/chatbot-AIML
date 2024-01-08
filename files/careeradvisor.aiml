@@ -13,7 +13,7 @@
     </category>
     <category>
         <pattern>I am looking for *</pattern>
-        <template>Just for conformation, are you looking for what career path you could pursue after graduating?
+        <template>Just for conformation, you said you are looking for <star/>, which is seeking for suggestions on job types. Is that right?
             <reply>
                 <text>Yes</text>
                 <postback>YES</postback>
@@ -318,16 +318,44 @@
             Great to hear that you found it helpful! Thank you! Have a nice day!
         </template>
     </category>
+    
     <category>
         <pattern>NEGATIVE</pattern>
         <template>
-            I am sorry about that. I hope you will have a positive experience next time when you return as we are still working on adding more features. Have a nice day!
+            Sorry to hear that. Could you provide more details? please start with "my advice is".
         </template>
     </category>
-
+    <category>
+        <pattern>my advice is *</pattern>
+        <template>
+            <think><set name="feedback"><star/></set></think>
+            Thank you for your feedback! is there anything else?
+            <button>
+            <text>Anything else?</text>
+            <postback>END NOTE</postback>
+            </button>
+            <button>
+                <text>Goodbye</text>
+                <postback>GOODBYE</postback>
+            </button>
+            
+        </template>
+    </category>
+    
+    <category>
+        <pattern>GOODBYE</pattern>
+        <template>
+            Thank you for your valiable feedback. I've noted down you feedback:"<get name="feedback"/>". Have a great day!
+        </template>
+    </category>
      <!--No confirmation-->
     <category>
         <pattern>NO</pattern>
         <template>Sorry, this is a career advice chatbot for CS students.This information on this bot may not have what you are looking for. </template>
+    </category>
+    
+    <category>
+        <pattern>*</pattern>
+        <template>Sorry, I don't get that. Could you try again?</template> 
     </category>
 </aiml>
