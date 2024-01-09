@@ -192,11 +192,11 @@
     </category>
     
     <!--Recommanded Job Categories-->
- 
+    <!--START Catergories-->
     <category>
         <pattern>DEVELOPMENT AND ENGINEERING JOB CATEGORY</pattern>
         <template>
-            Based on your interest, The following job titles in the market are all relevent to software development and engineering and can be your career starter.
+            Based on your interest, The following job titles in the market are all relevant to software development and engineering and can be your career starter.
             <ol>
                 <li>Software Developer</li>
                 <li>Software Engineer</li>
@@ -213,7 +213,7 @@
     <category>
         <pattern>LEADERSHIP AND EDUCATION JOB CATEGORY</pattern>
         <template>
-            The following job titles in the market are all relevent to development and engineering and can be your career starter.
+            The following job titles in the market are all relevant to development and engineering and can be your career starter.
             <ol>
                 <li>Information Technology Specialist</li>
                 <li>Engineering Lead</li>
@@ -221,7 +221,7 @@
                 <li>Computer Scientist</li>
                 <li>Computer Scientist Researcher</li>
             </ol>
-        Keep in mind: while each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in Leadership and Education. 
+        Keep in mind: while each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in leadership and education. 
         And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
             <srai>END NOTE</srai>
         </template>
@@ -230,7 +230,7 @@
     <category>
         <pattern>DESIGN AND USER EXPERIENCE JOB CATEGORY</pattern>
         <template>
-             The following job titles in the market are related to Design And User Experience and can be your career starter.
+             The following job titles in the market are related to design and user experience and can be your career starter.
             <ul>           
                 <li>UX Designer</li>
                 <li>User Interface Designer</li>
@@ -238,7 +238,7 @@
                 <li>Front-End Software Engineering</li>
                 <li>Interaction Designer</li>
             </ul>
-        Keep in mind: while each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in Design And User Experience. 
+        Keep in mind: while each still has its unique set of responsibilities and required skills, they all share a foundational knowledge and potential in design and user Experience. 
         And importantly, each of these roles can be learned and trained on the job, allowing for career growth and shifts based on interests and industry needs.
             <srai>END NOTE</srai>
         </template>
@@ -278,6 +278,8 @@
             <srai>END NOTE</srai>
         </template>
     </category>
+    <!--END Catergories-->
+    
     <category>
         <pattern>END NOTE</pattern>
         <template>
@@ -348,6 +350,7 @@
             Thank you for your valuable feedback. I've noted down you feedback:"<get name="feedback"/>". Have a great day!
         </template>
     </category>
+    
      <!--No confirmation-->
     <category>
         <pattern>NO</pattern>
