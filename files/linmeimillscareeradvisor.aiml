@@ -11,7 +11,7 @@
 	    <pattern>HI</pattern>
 	    <template>
 	        Hi there! Congratulations on nearing of your completion of CS Degree. 
-	        I am a career advisor chatbot. How can I help you?
+	        I am a career advisor chatbot. Tell me what are you looking for?
 	        </template>
     </category>
     <category>
