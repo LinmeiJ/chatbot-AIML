@@ -9,7 +9,10 @@
     </category>
     <category>
 	    <pattern>HI</pattern>
-	    <template>Hi there! Congratulations on nearing of your completion of CS Degree. I am a career advisor chatbot. How can I help you?</template>
+	    <template>
+	        Hi there! Congratulations on nearing of your completion of CS Degree. 
+	        I am a career advisor chatbot. How can I help you?
+	        </template>
     </category>
     <category>
         <pattern>I am looking for *</pattern>
@@ -284,12 +287,16 @@
         <pattern>END NOTE</pattern>
         <template>
             <button>
-            <text>Explore more jobs?</text>
+            <text>Explore more jobs</text>
             <postback>EXPLORE MORE JOBS</postback>
             </button>
             <button>
-                <text>Leave a feedback?</text>
+                <text>Leave a feedback</text>
                 <postback>LEAVE A FEEDBACK</postback>
+            </button>
+             <button>
+                <text>End converstation</text>
+                <postback>END CONVERSATION</postback>
             </button>
         </template>
     </category>
@@ -349,6 +356,10 @@
         <template>
             Thank you for your valuable feedback. I've noted down you feedback:"<get name="feedback"/>". Have a great day!
         </template>
+    </category>
+    <category>
+        <pattern>END CONVERSATION</pattern>
+        <template>Goodbye and have a great day!</template>
     </category>
     
      <!--No confirmation-->
