@@ -116,7 +116,7 @@
     <category>
         <pattern>SECURITY AND PROTECTION INTEREST</pattern>
         <template>
-            Do you desire of strong our internet network security and its practice?
+            Do you desire of stronging our internet network security and its practice?
             <button>
             <text>Yes</text>
             <postback>SECURITY AND NETWORKS JOB CATEGORY</postback>
